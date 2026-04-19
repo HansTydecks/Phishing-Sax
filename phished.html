@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>ACHTUNG! PHISHING-ANGRIFF!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            background-color: #ff0000;
+            background-image: repeating-linear-gradient(45deg,
+                    #ff0000,
+                    #ff0000 20px,
+                    #cc0000 20px,
+                    #cc0000 40px);
+            color: #ffff00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+            animation: flashBackground 0.5s infinite alternate;
+        }
+
+        @keyframes flashBackground {
+            0% {
+                background-color: #ff0000;
+            }
+
+            100% {
+                background-color: #cc0000;
+            }
+        }
+
+        .container {
+            background-color: #000000;
+            border: 10px solid #ffff00;
+            border-radius: 15px;
+            padding: 50px;
+            max-width: 800px;
+            box-shadow: 0 0 50px #ffff00, inset 0 0 30px #ff0000;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 5em;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            text-shadow: 5px 5px 0 #ff0000;
+            animation: shake 0.2s infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(2px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(0px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(2px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(2px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        p {
+            font-size: 2em;
+            line-height: 1.4;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #ff0000;
+            background-color: #ffff00;
+            padding: 5px 10px;
+            font-size: 1.2em;
+            display: inline-block;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .icon {
+            font-size: 6em;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 20px 40px;
+            background-color: #ffff00;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            border: 5px solid #ff0000;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #ff0000;
+            color: #ffff00;
+            border-color: #ffff00;
+            transform: scale(1.1);
+        }
+
+        .password-leak {
+            font-size: 3em;
+            color: #ff00ff;
+            text-shadow: 2px 2px 5px #ffffff;
+            margin-top: 30px;
+            animation: blink 0.5s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">☠️🚨☠️</div>
+        <h1>ALARM!</h1>
+        <div class="highlight">DU HÄTTEST FAST DEIN PASSWORT VERLOREN!</div>
+        <p>Dies war ein gezielter <strong>Phishing-Angriff</strong> zu Schulungszwecken.</p>
+        <p>Hättest du jetzt dein Passwort eingegeben, hätten Kriminelle vollen Zugriff auf dein LernSax-Konto, deine
+            E-Mails und deine Dateien!</p>
+        <div class="password-leak">DEINE DATEN WÄREN JETZT WEG!</div>
+        <a href="index.html" class="btn">Puh! Zurück zur Startseite</a>
+    </div>
+</body>
+
+</html>
